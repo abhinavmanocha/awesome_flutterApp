@@ -22,36 +22,52 @@ class HomePage extends StatelessWidget {
         body: Center(
           child: Container(
             height: 100,
+            width: 100,
             color: Colors.teal,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children:<Widget> [
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  width: 100,
-                  height: 100,
-                  color: Colors.red,
-                  alignment: Alignment.center,
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  width: 100,
-                  height: 100,
-                  color: Colors.blue,
-                  alignment: Alignment.center,
-                ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                  alignment: Alignment.center,
-                )
-              ],
             ),
-          )
         ),
-    );
+        drawer: Drawer(
+          child: ListView(
+            padding: const EdgeInsets.all(0),
+            children: const <Widget>[
+              DrawerHeader(
+                child: Text("I am a Drawer"),
+                decoration: BoxDecoration(color: Colors.purple),
+              ),
+              ListTile(
+                leading: Icon(Icons.person),
+                title: Text("Abhinav Manocha"),
+                subtitle: Text("This is a subtitle"),
+                trailing: Icon(Icons.camera_enhance),
+                  //onTap: (){},
+              ),
+              ListTile(
+                leading: Icon(Icons.person),
+                title: Text("Abhinav Manocha"),
+                subtitle: Text("This is a subtitle"),
+                trailing: Icon(Icons.camera_enhance),
+              ),
+              ListTile(
+                leading: Icon(Icons.person),
+                title: Text("Abhinav Manocha"),
+                subtitle: Text("This is a subtitle"),
+                trailing: Icon(Icons.camera_enhance),
+              ),
+              ListTile(
+                leading: Icon(Icons.person),
+                title: Text("Abhinav Manocha"),
+                subtitle: Text("This is a subtitle"),
+                trailing: Icon(Icons.camera_enhance),
+              ),
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){},
+          child: const Icon(
+            Icons.eject
+          ),
+          ),
+        );
   }
 }
