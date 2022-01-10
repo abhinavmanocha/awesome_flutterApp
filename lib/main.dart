@@ -24,26 +24,8 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.all(8),
             width: 100,
             height: 100,
-            clipBehavior: Clip.antiAlias,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Colors.red,
-              //shape: BoxShape.circle
-              borderRadius: BorderRadius.circular(10.0),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.blue,
-                  blurRadius: 300,
-                )
-              ]
-            ),
-            child:const Text("This is a ceneterd text inside of a div", 
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-            ),
+            color: Colors.red,
+            alignment: Alignment.center, 
           ),
         ),
     );
