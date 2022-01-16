@@ -19,12 +19,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("This is my title"),
         ),
-        body: Center(
-          child: Container(
-            height: 100,
-            width: 100,
-            color: Colors.teal,
-            ),
+        body: const Center(
+          child: Card(
+            
+          )
         ),
         drawer: Drawer(
           child: ListView(
